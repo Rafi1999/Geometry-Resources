@@ -1,6 +1,6 @@
 let serial = 0;
 const newField = 'cm'+'2'.sup();
-const btnText = ('Covert to '+'m'+'2'.sup()).toLowerCase();
+const btnText = 'Convert to '+'m'+'2'.sup();
 const btnColor = ' bg-sky-500 text-white btn btn-lg';
 function displayData(name,area,newField,btnText){
     const container = document.getElementById("table-container");
@@ -10,7 +10,7 @@ function displayData(name,area,newField,btnText){
     <td>${name}</td>
     <td>${area}${newField}</td>
     <td>
-    <button class='bg-sky-500 text-white btn btn-sm'>${btnText}</button>
+    <button class='bg-sky-500 border-white text-white btn btn-sm text-primary lowercase'>${btnText}</button>
     </td>
     
   `;
