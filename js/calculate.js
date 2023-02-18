@@ -1,7 +1,7 @@
 let serial = 0;
 const newField = 'cm'+'2'.sup();
 const btnText = 'Convert to '+'m'+'2'.sup();
-const btnColor = ' bg-sky-500 text-white btn btn-lg';
+const btnColor = ' bg-sky-500 text-white btn btn-md';
 function displayData(name,area,newField,btnText){
     const container = document.getElementById("table-container");
     const tr = document.createElement("tr");
