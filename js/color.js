@@ -1,3 +1,4 @@
+// function to generate random color
 function randomColor() {
     let color = [];
     for (let i = 0; i < 3; i++) {
@@ -6,32 +7,32 @@ function randomColor() {
     return 'rgb(' + color.join(', ') + ')';
   } 
   
-document.getElementById('first').addEventListener('mouseover',function(){
+document.getElementById('first').addEventListener('mouseenter',function(){
     const colorbg = document.getElementById('first');
     colorbg.style.backgroundColor = randomColor(); 
 })
 
-document.getElementById('second').addEventListener('mouseover',function(){
+document.getElementById('second').addEventListener('mouseenter',function(){
     const colorbg = document.getElementById('second');
     colorbg.style.backgroundColor = randomColor(); 
 })
 
-document.getElementById('third').addEventListener('mouseover',function(){
+document.getElementById('third').addEventListener('mouseenter',function(){
     const colorbg = document.getElementById('third');
     colorbg.style.backgroundColor = randomColor(); 
 })
 
-document.getElementById('fourth').addEventListener('mouseover',function(){
+document.getElementById('fourth').addEventListener('mouseenter',function(){
     const colorbg = document.getElementById('fourth');
     colorbg.style.backgroundColor = randomColor(); 
 })
 
-document.getElementById('fifth').addEventListener('mouseover',function(){
+document.getElementById('fifth').addEventListener('mouseenter',function(){
     const colorbg = document.getElementById('fifth');
     colorbg.style.backgroundColor = randomColor(); 
 })
 
-document.getElementById('sixth').addEventListener('mouseover',function(){
+document.getElementById('sixth').addEventListener('mouseenter',function(){
     const colorbg = document.getElementById('sixth');
     colorbg.style.backgroundColor = randomColor(); 
 })

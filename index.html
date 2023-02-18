@@ -19,6 +19,7 @@
 </head>
 <body>
     <header class="mx-12">
+      <!-- navbar section -->
       <div class="navbar bg-sky-100 lg:px-12 mt-5 rounded-lg">
         <div class="flex-1">
           <h3 class="text-primary"><span class="text-3xl font-bold text-black">Interactive</span><br><span class="text-2xl font-medium text-slate-500">Geometry Genius</span></h3>
@@ -31,8 +32,9 @@
     </header>
     <main>
         <section class="mx-12 mt-5 flex">
-            <div class=" w-full md:w-[60%] lg:w-[70%] grid md:grid-cols-2 lg:grid-cols-3 gap-2 border-gray-500">
-                <div id="first" class="card w-full bg-base-100 border-gray-500 shadow-xl">
+            <div class=" w-full md:w-[60%] lg:w-[70%] grid md:grid-cols-2 lg:grid-cols-3 gap-2">
+              <!-- first card --> 
+              <div id="first" class="card w-full bg-base-100 border-solid border-2 border-slate-100 ">
                     <figure class="px-10 pt-10">
                       <img src="images/triangle.png" alt="Shoes" class="h-48" />
                     </figure>
@@ -49,93 +51,98 @@
                         <button id="btn-first" class="mt-4 px-20 py-2 text-center bg-sky-500 rounded-lg text-primary text-white">Calculate</button>
                       </div>
                     </div>
-                  </div>
-                <div id="second" class="card w-full bg-base-100 border-gray-500 shadow-xl">
+              </div>
+              <!-- second card -->
+              <div id="second" class="card w-full bg-base-100 border-solid border-2 border-slate-100">
                     <figure class="px-10 pt-10">
                       <img src="images/rectangle.png" alt="Shoes" class="h-48" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Rectangle</h2>
+                      <h2 id="rectangle" class="card-title">Rectangle</h2>
                       <p>Area (A) = w X l</p>
                       <div class="flex w-[75%]">
-                        <input class="w-[25%] bg-slate-200 px-2" type="text" placeholder="w">
+                        <input id="rectangle-width" class="w-[25%] bg-slate-200 px-2" type="text" placeholder="w">
                         <p>cm</p>
-                        <input class="w-[25%] bg-slate-200 px-2" type="text" placeholder="l">
+                        <input id="rectangle-length" class="w-[25%] bg-slate-200 px-2" type="text" placeholder="l">
                         <p>cm</p>
                       </div>
                       <div class="card-actions">
-                        <button class="mt-4 px-20 py-2 text-center bg-sky-500 rounded-lg text-primary text-white">Calculate</button>
+                        <button id="btn-second" class="mt-4 px-20 py-2 text-center bg-sky-500 rounded-lg text-primary text-white">Calculate</button>
                       </div>
                     </div>
-                  </div>
-                <div id="third" class="card w-full bg-base-100 border-gray-500 shadow-xl">
+              </div>
+              <!-- third card -->
+              <div id="third" class="card w-full bg-base-100 border-solid border-2 border-slate-100">
                     <figure class="px-10 pt-10">
                       <img src="images/parallelogram.png" alt="Shoes" class="h-48" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Parallelogram</h2>
+                      <h2 id="parallelogram" class="card-title">Parallelogram</h2>
                       <p>Area (A) = b X h</p>
                       <div class="w-[75%]">
-                        <p class="text-lg">b=<span>10</span>cm, h=<span>12</span>cm</p>
+                        <p class="text-lg">b=<span id="parallelogram-breadth">10</span>cm, h=<span id="parallelogram-height">12</span>cm</p>
                       </div>
                       <div class="card-actions">
-                        <button class="mt-4 px-20 py-2 text-center bg-sky-500 rounded-lg text-primary text-white">Calculate</button>
+                        <button id="btn-third" class="mt-4 px-20 py-2 text-center bg-sky-500 rounded-lg text-primary text-white">Calculate</button>
                       </div>
                     </div>
-                  </div>
-                <div id="fourth" class="card w-full bg-base-100 border-gray-500 shadow-xl">
+              </div>
+              <!-- fourth card -->
+              <div id="fourth" class="card w-full bg-base-100 border-solid border-2 border-slate-100">
                     <figure class="px-10 pt-10">
                       <img src="images/rhombus.png" alt="Shoes" class="h-48" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Rhombus</h2>
+                      <h2 id="rhombus" class="card-title">Rhombus</h2>
                       <p>Area (A) = 0.5 X d1 X d2</p>
                       <div class="w-[75%]">
-                        <p class="text-lg">d1=<span>1</span>cm, d2=<span>8</span>cm</p>
+                        <p class="text-lg">d1=<span id="rhombus-diagonal1">16</span>cm, d2=<span id="rhombus-diagonal2">8</span>cm</p>
                       </div>
                       <div class="card-actions">
-                        <button class="mt-4 px-20 py-2 text-center bg-sky-500 rounded-lg text-primary text-white">Calculate</button>
+                        <button id="btn-fourth" class="mt-4 px-20 py-2 text-center bg-sky-500 rounded-lg text-primary text-white">Calculate</button>
                       </div>
                     </div>
-                  </div>
-                <div id="fifth" class="card w-full bg-base-100 border-gray-500 shadow-xl">
+              </div>
+              <!-- fifth card -->
+              <div id="fifth" class="card w-full bg-base-100 border-solid border-2 border-slate-100">
                     <figure class="px-10 pt-10">
                       <img src="images/pentagon.png" alt="Shoes" class="h-48" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Pentagon</h2>
+                      <h2 id="pentagon" class="card-title">Pentagon</h2>
                       <p>Area (A) = 0.5 X p X b</p>
                       <div class="w-[75%]">
-                        <p class="text-lg">p=<span>6</span>cm, b=<span>10</span>cm</p>
+                        <p class="text-lg">p=<span id="pentagon-perimeter">6</span>cm, b=<span id="pentagon-apothem">10</span>cm</p>
                       </div>
                       <div class="card-actions">
-                        <button class="mt-4 px-20 py-2 text-center bg-sky-500 rounded-lg text-primary text-white">Calculate</button>
+                        <button id="btn-fifth" class="mt-4 px-20 py-2 text-center bg-sky-500 rounded-lg text-primary text-white">Calculate</button>
                       </div>
                     </div>
-                  </div>
-                <div id="sixth" class="card w-full bg-base-100 border-gray-500 shadow-xl">
+              </div>
+              <!-- sixth card -->
+              <div id="sixth" class="card w-full bg-base-100 border-solid border-2 border-slate-100">
                     <figure class="px-10 pt-10">
                       <img src="images/ellipse.png" alt="Shoes" class="h-48" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Ellipse</h2>
+                      <h2 id="ellipse" class="card-title">Ellipse</h2>
                       <p>Area (A) = <span class="text-lg">π</span>ab</p>
                       <div class="w-[75%]">
-                        <p class="text-lg">a=<span>10</span>cm, b=<span>4</span>cm</p>
+                        <p class="text-lg">a=<span id="ellipse-a-axis">10</span>cm, b=<span id="ellipse-b-axis">4</span>cm</p>
                       </div>
                       <div class="card-actions">
-                        <button class="mt-4 px-20 py-2 text-center bg-sky-500 rounded-lg text-primary text-white">Calculate</button>
+                        <button id="btn-sixth" class="mt-4 px-20 py-2 text-center bg-sky-500 rounded-lg text-primary text-white">Calculate</button>
                       </div>
                     </div>
-                  </div>
-                
+              </div>
             </div>
-            <div class="w-full md:w-[40%] lg:w-[30%] border-gray-500">
+            <!-- area calculation class -->
+            <div class="w-full md:w-[40%] lg:w-[30%]  border-solid border-2 border-slate-100 h-fit rounded ml-10">
                 <h1 class="text-lg text-center font-bold underline mt-5">
                     Area Calculation
                   </h1>
                   <div class="overflow-x-auto">
-                    <table class="table w-full">
+                    <table class="table  w-full">
                       <tbody id="table-container">
                         <!-- <tr>
                           <th>1</th>
