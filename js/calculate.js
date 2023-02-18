@@ -23,6 +23,14 @@ document.getElementById('btn-first').addEventListener('click', function(){
     const name = document.getElementById('triangle').innerText;
     const breadthField = document.getElementById('breadth-triangle').value;
     const heightField = document.getElementById('height-triangle').value;
+    if((breadthField==='') || isNaN(breadthField) || (breadthField<0)){
+      alert('Please Enter Positive Number');
+      return;
+    }
+    else if(isNaN(heightField) || heightField<0 || heightField===''){
+      alert("Please Enter Positive Number");
+      return;
+    }
     let area = 0.5*parseInt(breadthField)*parseInt(heightField);
     if(area % 1 !=0){
       area = parseFloat(area).toFixed(2);
@@ -35,6 +43,14 @@ document.getElementById('btn-second').addEventListener('click',function(){
   const name = document.getElementById('rectangle').innerText;
     const widthField = document.getElementById('rectangle-width').value;
     const lengthField = document.getElementById('rectangle-length').value;
+    if((widthField==='') || isNaN(widthField) || (widthField<0)){
+      alert('Please Enter Positive Number');
+      return;
+    }
+    else if(isNaN(lengthField) || length<0 || lengthField===''){
+      alert("Please Enter Positive Number");
+      return;
+    }
     const area = parseInt(widthField)*parseInt(lengthField);
     displayData(name,area,newField,btnText);
 })
