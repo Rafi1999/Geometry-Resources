@@ -33,7 +33,7 @@ document.getElementById('btn-first').addEventListener('click', function(){
       serial-=1;
       return;
     }
-    let area = 0.5*parseInt(breadthField)*parseInt(heightField);
+    let area = 0.5*parseFloat(breadthField)*parseFloat(heightField);
     if(area % 1 !=0){
       area = parseFloat(area).toFixed(2);
     }
@@ -55,7 +55,7 @@ document.getElementById('btn-second').addEventListener('click',function(){
       alert("Please Enter Positive Number");
       return;
     }
-    const area = parseInt(widthField)*parseInt(lengthField);
+    const area = parseFloat(widthField)*parseFloat(lengthField);
     displayData(name,area,newField,btnText);
 })
 // Parallelogram Area Calculation
@@ -64,7 +64,7 @@ document.getElementById('btn-third').addEventListener('click',function(){
   const name = document.getElementById('parallelogram').innerText;
   const breadthField = document.getElementById('parallelogram-breadth').innerText;
   const heightField = document.getElementById('parallelogram-height').innerText;
-  const area = parseInt(breadthField)*parseInt(heightField);
+  const area = parseFloat(breadthField)*parseFloat(heightField);
   displayData(name,area,newField,btnText);
 })
 // Rhombus Area Calculation
@@ -73,7 +73,7 @@ document.getElementById('btn-fourth').addEventListener('click',function(){
   const name = document.getElementById('rhombus').innerText;
   const diagonal1Field = document.getElementById('rhombus-diagonal1').innerText;
   const diagonal2Field = document.getElementById('rhombus-diagonal2').innerText;
-  let area = 0.5*parseInt(diagonal1Field)*parseInt(diagonal2Field);
+  let area = 0.5*parseFloat(diagonal1Field)*parseFloat(diagonal2Field);
     if(area % 1 !=0){
       area = parseFloat(area).toFixed(2);
     }
@@ -85,7 +85,7 @@ document.getElementById('btn-fifth').addEventListener('click',function(){
   const name = document.getElementById('pentagon').innerText;
   const perimeterField = document.getElementById('pentagon-perimeter').innerText;
   const apothemField = document.getElementById('pentagon-apothem').innerText;
-  let area = 0.5*parseInt(perimeterField)*parseInt(apothemField);
+  let area = 0.5*parseFloat(perimeterField)*parseFloat(apothemField);
     if(area % 1 !=0){
       area = parseFloat(area).toFixed(2);
     }
@@ -97,7 +97,7 @@ document.getElementById('btn-sixth').addEventListener('click',function(){
   const name = document.getElementById('ellipse').innerText;
   const a_axisField = document.getElementById('ellipse-a-axis').innerText;
   const b_axisField = document.getElementById('ellipse-b-axis').innerText;
-  let area = Math.PI *parseInt(a_axisField)*parseInt(b_axisField);
+  let area = Math.PI *parseFloat(a_axisField)*parseFloat(b_axisField);
     if(area % 1 !=0){
       area = parseFloat(area).toFixed(2);
     }
