@@ -55,7 +55,7 @@ document.getElementById('btn-second').addEventListener('click',function(){
       alert("Please Enter Positive Number");
       return;
     }
-    const area = parseFloat(widthField)*parseFloat(lengthField);
+    const area = parseFloat(widthField)*parseFloat(lengthField).toFixed(2);
     displayData(name,area,newField,btnText);
 })
 // Parallelogram Area Calculation
